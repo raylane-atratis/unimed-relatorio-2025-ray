@@ -69,20 +69,11 @@ h3{
 }
 
 h4{
-  font-weight: 700;
+  font-weight: 400;
   font-size: 22px;
   line-height: 29px;
-  color: var(--verde-escuro);
-  &.roxo{
-    color: var(--roxo);
-    padding-top: 10px;
-    padding-bottom: 4px;
-  }
-  &.laranja-color {
-    color: var(--laranja);
-    padding-top: 9px;
-    padding-bottom: 4px;
-  }
+  color: var(--laranja);
+ 
 }
 
 h5{
@@ -108,6 +99,7 @@ p {
   font-size: 15px;
   line-height: 28px;
   color: var(--verde-escuro);
+  margin-bottom: 10px;
 }
 
 .btn-padrao {
