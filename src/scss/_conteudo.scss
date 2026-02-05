@@ -391,86 +391,7 @@ body, html{
   }
 }
 
-.sec-estrategia-governanca {
-  padding: 62px 0;
-  margin-top: 80px;
-  background: #EAE3D8;
 
-  .title-principal {
-    margin-bottom: 46px;
-  }
-
-  h3 {
-    margin-bottom: 10px;
-  }
-
-  h4.subtitle {
-    margin-bottom: 3px;
-    
-    font-weight: 400;
-
-    font-size: 22px;
-    line-height: 29px;
-
-    text-transform: uppercase;
-    color: var(--laranja);
-  }
-
-  .list-item {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-
-    @media screen and (max-width: 992px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    .item {
-      border: 1px solid #08484C;
-      padding: 27px 32px;
-      border-radius: 20px;    
-      position: relative;
-
-
-      &.item-1 {
-        border-top-left-radius: 70px;
-      }
-
-      &.item-2 {
-        border-bottom-left-radius: 70px;
-      }
-
-      &.item-3 {
-        
-        border-top-right-radius: 70px;
-      }
-
-      &.item-4 {
-        border-bottom-right-radius: 70px;
-      }
-
-
-      .title {
-        position: absolute;
-        top: -25px;
-        background: #EAE3D8;
-        padding: 10px;
-
-        h4 {
-          font-weight: 400;
-          font-size: 22px;
-          line-height: 29px;
-          text-transform: uppercase;
-          color: var(--verde);
-        }
-      }
-    }
-  }
-
-  .btn-padrao {
-    margin-top: 40px;
-  }
-}
 
 .sec-organograma {
   padding: 50px 0;
@@ -574,27 +495,37 @@ body, html{
       background: var(--verde-escuro);
       border-radius: 20px;
       border-bottom-right-radius: 70px;
-      margin: 43px 0 36px;
+      margin: 33px 0 26px;
+      position: relative;
+      padding-left: 55px;
 
       display: flex;
       align-items: center;
+      min-height: 154px;
 
       p {
         color: var(--branco);
-        padding: 23px 32px;
+        padding: 23px 32px 23px 0px;
+        font-size: 15px;
+        font-weight: 400;
+        
       }
 
       .icon-svg {
         background: #EAE3D8;
         border-radius: 50%;
-        width: 63px;
-        height: 63px;
+        width: 68px;
+        height: 68px;
+        position: absolute;
+        left: -34px;
+        top: 50%;
+        transform: translateY(-50%);
 
         display: flex;
         justify-content: center;
         align-items: center;
 
-        padding: 6px;
+        padding: 5px;
 
 
         .content-svg {
@@ -607,9 +538,125 @@ body, html{
           display: flex;
           justify-content: center;
           align-items: center;
+
+          svg {
+            width: 25px;
+            height: auto;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        padding-left: 20px;
+        margin-left: 30px;
+        
+        .icon-svg {
+          width: 54px;
+          height: 54px;
+          left: -27px;
+          
+          .content-svg {
+            width: 46px;
+            height: 46px;
+            
+            svg {
+              width: 20px;
+            }
+          }
+        }
+
+        p {
+          font-size: 14px;
+          padding: 15px 15px 15px 25px;
+        }
+      }
+    }
+
+    .btn-padrao {
+      margin-top: 20px;
+    }
+  }
+
+
+
+}
+
+.sec-centro-oncologico {
+  padding: 80px 0;
+
+  h4 {
+    margin: 25px 0 6px;
+  }
+}
+
+.sec-centros-imagem {
+  
+  .content {
+    padding: 47px 38px;
+    background: #EAE3D8;
+    border-radius: 30px;
+  }
+
+  .title-principal {
+    margin: 29px 0 38px;
+
+    h4 {
+      text-transform: uppercase;
+    }
+  }
+
+  .list-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item {
+      border: 1px solid #08484C;
+      padding: 27px 32px;
+      border-radius: 20px;    
+      position: relative;
+
+
+      &.item-1 {
+        border-top-left-radius: 70px;
+      }
+
+      &.item-2 {
+        border-bottom-left-radius: 70px;
+      }
+
+      &.item-3 {
+        
+        border-top-right-radius: 70px;
+      }
+
+      &.item-4 {
+        border-bottom-right-radius: 70px;
+      }
+
+
+      .title {
+        position: absolute;
+        top: -25px;
+        background: #EAE3D8;
+        padding: 10px;
+
+        h4 {
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 29px;
+          text-transform: uppercase;
+          color: var(--verde);
         }
       }
     }
   }
 
-}
+  .btn-padrao {
+    margin-top: 40px;
+  }
+} 
