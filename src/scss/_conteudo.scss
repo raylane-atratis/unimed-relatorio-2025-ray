@@ -1,22 +1,23 @@
-body, html{
+body,
+html {
   overflow-x: hidden;
 }
 
-.container{
+.container {
   @media (min-width: 768px) {
     padding: 0px 30px 0;
   }
 }
 
-.conteudo .container{
+.conteudo .container {
   @media (min-width: 768px) {
     width: 90% !important;
     margin-left: 37px;
-  }  
+  }
 }
 
 .secBannerBannerPrincipal {
-  margin-top: 40px; 
+  margin-top: 40px;
 }
 
 .titulo-principal-pagina {
@@ -36,12 +37,12 @@ body, html{
       grid-template-columns: 1fr 1fr;
       gap: 4rem; // Espaçamento maior entre colunas como na imagem
     }
-    
+
     // Caso o usuário use divs ao invés de p direto
-    > div {
-       display: flex;
-       flex-direction: column;
-       gap: 1rem;
+    >div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
   }
 }
@@ -66,7 +67,12 @@ body, html{
 }
 
 .sect-texto {
-  h2, h3, h4, h5, h6 {
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-bottom: 1rem;
   }
 
@@ -82,8 +88,9 @@ body, html{
   h3 {
     margin-bottom: 40px;
     text-align: center;
-    @media(min-width: 768px){
-        text-align: left;
+
+    @media(min-width: 768px) {
+      text-align: left;
     }
   }
 
@@ -101,9 +108,9 @@ body, html{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
     @media (min-width: 992px) {
-        gap: 30px;
+      gap: 30px;
     }
   }
 
@@ -114,52 +121,53 @@ body, html{
     position: relative;
     background: #fff; // Assumindo fundo branco
 
-    &.card-numero-1{
+    &.card-numero-1 {
       border-top-left-radius: 20px;
       border-top-right-radius: 70px;
       border-bottom-right-radius: 20px;
       border-bottom-left-radius: 20px;
 
-      @media(min-width: 992px){
+      @media(min-width: 992px) {
         max-width: 294px;
       }
     }
 
-    &.card-numero-2{
+    &.card-numero-2 {
       border-top-left-radius: 70px;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
       border-bottom-left-radius: 20px;
 
-      @media(min-width: 992px){
+      @media(min-width: 992px) {
         max-width: 294px;
       }
     }
 
-    &.card-numero-3{
+    &.card-numero-3 {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
       border-bottom-left-radius: 70px;
 
-      @media(min-width: 992px){
+      @media(min-width: 992px) {
         max-width: 323px;
       }
     }
 
-    &.card-numero-4{
+    &.card-numero-4 {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 70px;
       border-bottom-left-radius: 20px;
 
-      @media(min-width: 992px){
+      @media(min-width: 992px) {
         max-width: 323px;
       }
     }
 
     .header-card {
       margin-bottom: 20px;
+
       strong {
         font-size: 24px;
         color: var(--verde-escuro);
@@ -172,7 +180,7 @@ body, html{
       gap: 20px;
       position: relative;
       padding-bottom: 30px;
-      
+
       .icon {
         width: 40px;
         height: 40px;
@@ -182,8 +190,9 @@ body, html{
         justify-content: center;
         z-index: 1; // Para ficar acima da linha se necessário
         background: #fff; // Para cobrir a linha passando por trás se fosse contínua
-        
-        img, svg {
+
+        img,
+        svg {
           width: 100%;
           height: 100%;
           object-fit: contain;
@@ -193,7 +202,7 @@ body, html{
       .info {
         display: flex;
         flex-direction: column;
-        
+
         strong {
           font-size: 32px;
           line-height: 1;
@@ -215,6 +224,7 @@ body, html{
 
 .sect-separador {
   padding-top: 50px;
+
   .separador {
     width: 100%;
     height: 2px;
@@ -239,7 +249,7 @@ body, html{
     @media screen and (max-width: 992px) {
       margin-bottom: 40px;
     }
-    
+
     span {
       display: block;
       color: var(--verde-escuro);
@@ -276,7 +286,8 @@ body, html{
       margin-left: -1px;
     }
 
-    .visao, .proposito {
+    .visao,
+    .proposito {
       display: flex;
       align-items: center;
       gap: 35px;
@@ -326,7 +337,7 @@ body, html{
   .itens-valores {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-   
+
     position: relative; // Para posicionar o conector
 
     @media screen and (max-width: 992px) {
@@ -334,12 +345,12 @@ body, html{
     }
 
     .conector-valores {
-      position: absolute; 
-      top: 41px; 
-      left: 0; 
-      right: 16.666%; 
-      height: 186px; 
-      z-index: 0; 
+      position: absolute;
+      top: 41px;
+      left: 0;
+      right: 16.666%;
+      height: 186px;
+      z-index: 0;
       pointer-events: none;
       width: 100%;
 
@@ -350,8 +361,8 @@ body, html{
         border: 1px solid var(--verde);
         border-radius: 20px;
         border-top-left-radius: 70px;
-       }
-     }
+      }
+    }
 
     .item {
       display: flex;
@@ -385,6 +396,7 @@ body, html{
 
 .sec-imagem-full {
   padding-top: 20px;
+
   img {
     max-width: 708px;
     width: 100%;
@@ -397,30 +409,36 @@ body, html{
   padding: 50px 0;
   background: linear-gradient(84.3deg, #10484C -5.08%, #00995D 99.71%);
 
-    h2 {
-      color: var(--branco);
-      margin-bottom: 10px;
-    }
+  h2 {
+    color: var(--branco);
+    margin-bottom: 10px;
+  }
 
-    p {
-      color: var(--branco);
-      margin-bottom: 19px;
-    }
+  p {
+    color: var(--branco);
+    margin-bottom: 19px;
+  }
 
-    .btn-padrao {
-      &:hover{
-        background: var(--verde);
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); // Sombra adicionada
-        svg{
-          animation: arrow-move-up 1s infinite alternate;
-        }
-      }
+  .btn-padrao {
+    &:hover {
+      background: var(--verde);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); // Sombra adicionada
 
-      @keyframes arrow-move-up {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(5px); }
+      svg {
+        animation: arrow-move-up 1s infinite alternate;
       }
     }
+
+    @keyframes arrow-move-up {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(5px);
+      }
+    }
+  }
 }
 
 .unidades-hospitalares {
@@ -442,7 +460,7 @@ body, html{
   @media screen and (max-width: 992px) {
     margin-bottom: 40px;
   }
-  
+
   span {
     display: block;
     color: var(--verde-escuro);
@@ -458,7 +476,7 @@ body, html{
     margin-bottom: 29px;
   }
 
- 
+
 
   .hospital-unimed-sul {
     h4 {
@@ -475,7 +493,7 @@ body, html{
 
 .sec-hospital-unimed {
   margin-top: 60px;
-  
+
   @media screen and (max-width: 992px) {
     margin-top: 102px;
   }
@@ -508,7 +526,7 @@ body, html{
         padding: 23px 32px 23px 0px;
         font-size: 15px;
         font-weight: 400;
-        
+
       }
 
       .icon-svg {
@@ -549,16 +567,16 @@ body, html{
       @media (max-width: 768px) {
         padding-left: 20px;
         margin-left: 30px;
-        
+
         .icon-svg {
           width: 54px;
           height: 54px;
           left: -27px;
-          
+
           .content-svg {
             width: 46px;
             height: 46px;
-            
+
             svg {
               width: 20px;
             }
@@ -590,7 +608,7 @@ body, html{
 }
 
 .sec-centros-imagem {
-  
+
   .content {
     padding: 47px 38px;
     background: #EAE3D8;
@@ -617,7 +635,7 @@ body, html{
     .item {
       border: 1px solid #08484C;
       padding: 27px 32px;
-      border-radius: 20px;    
+      border-radius: 20px;
       position: relative;
 
 
@@ -630,7 +648,7 @@ body, html{
       }
 
       &.item-3 {
-        
+
         border-top-right-radius: 70px;
       }
 
@@ -659,4 +677,400 @@ body, html{
   .btn-padrao {
     margin-top: 40px;
   }
-} 
+}
+
+
+/* Raylane Sec */
+
+.banner-pagina-sub {
+  margin: 45px 0 30px;
+}
+
+
+.sec-texto-nossas-pessoas {
+  margin-bottom: 30px;
+
+  h4 {
+    margin-bottom: 5px;
+  }
+}
+
+.nossas-pessoas-2 {
+  padding-bottom: 40px;
+
+  h5 {
+    margin-bottom: 5px;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  img {
+    margin-bottom: 30px;
+  }
+
+  .sec-lista-descritiva {
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  #paragrafo-2 {
+    max-width: 416px;
+  }
+}
+
+.btn-pessoas {
+  a {
+    color: inherit;
+  }
+
+  svg {
+    position: relative;
+    right: -20px;
+  }
+}
+
+.sec-list {
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+  ul {
+    list-style: disc;
+
+    li {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--verde-escuro);
+      line-height: 1.8;
+      padding-left: 5px;
+    }
+
+    li::marker {
+      font-size: 10px;
+    }
+  }
+}
+
+.sec-lista-descritiva {
+  margin-bottom: 30px;
+
+  ul {
+    list-style: disc;
+    margin-left: 12px;
+    padding-bottom: 5px;
+
+    li {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--verde);
+      line-height: 1.8;
+      padding-left: 5px;
+    }
+
+    li::marker {
+      font-size: 14px;
+    }
+  }
+
+  span {
+    color: var(--verde);
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  .sec-list {
+    li {
+      color: var(--verde-escuro);
+    }
+  }
+}
+
+.sec-lista-descritiva-2 {
+  margin: 30px 0;
+
+  h5 {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    margin-bottom: 11px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.sec-lista-descritiva-3 {
+  margin-bottom: 40px;
+
+  h4 {
+    margin-bottom: 11px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-bottom: 1.5rem;
+    margin-left: 12px;
+
+    li {
+      list-style: disc;
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--verde-escuro);
+      line-height: 1.8;
+      padding-left: 5px;
+
+      span {
+        color: var(--verde);
+        font-weight: 600;
+      }
+    }
+
+    li::marker {
+      font-size: 14px;
+      color: var(--verde);
+    }
+  }
+}
+
+.sec-list-space {
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.escape-7-space {
+  margin-left: 25px !important;
+}
+
+.nossas-pessoas-bloco {
+  max-width: 460px;
+  min-height: 294px;
+  width: 100%;
+  border-radius: 20px 70px 20px 20px;
+  background: var(--verde-escuro, #004d40);
+}
+
+.stats-section {
+  padding: 18px 0 30px;
+
+  .stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    @media (max-width: 992px) {
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  .stats-column {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    @media (max-width: 992px) {
+      padding: 0 30px;
+      flex-direction: column;
+    }
+  }
+
+  .stat-card {
+    border: 1px solid var(--verde);
+    border-radius: 20px 70px 20px 20px;
+    padding: 40px 40px 30px;
+    background: #fff;
+    position: relative;
+
+    @media (min-width: 992px) {
+      max-width: 226px;
+      height: 128px;
+    }
+
+    .year {
+      position: absolute;
+      top: -28px;
+      left: 40%;
+      transform: translateX(-50%);
+      background: #fff;
+      padding: 0 15px;
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--verde);
+    }
+
+    .number {
+      font-size: 30px;
+      line-height: 0.8;
+      font-weight: 800;
+      color: var(--verde-escuro);
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 1.3;
+      color: var(--verde-escuro);
+      font-weight: 600;
+    }
+  }
+}
+
+.stat-card-gestao {
+  border: 1px solid var(--verde);
+  border-radius: 20px 70px 20px 20px;
+  padding: 48px 33px 22px 22px;
+  background: #fff;
+  position: relative;
+
+  @media (min-width: 992px) {
+    max-width: 256px;
+    height: 138px;
+  }
+
+  .year {
+    position: absolute;
+    top: -28px;
+    left: 40%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 0 15px;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--verde-escuro);
+  }
+
+  .number {
+    font-size: 30px;
+    line-height: 0.8;
+    font-weight: 800;
+    color: var(--verde-escuro);
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 1.3;
+    color: var(--verde-escuro);
+    font-weight: 600;
+  }
+}
+
+.escape-7-imagens {
+  .sec-lista-descritiva-3 {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-bottom: 6px !important;
+
+    h5 {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.sec-texto-nossa-gestao {
+  padding: 0 0 30px;
+}
+
+.nossa-gestao-canais {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.sec-nossas-solucoes {
+  padding: 15px 0 90px;
+
+  h4 {
+    text-align: center;
+    text-transform: uppercase; // Para seguir o padrão da imagem
+    font-weight: 400;
+    color: var(--verde-escuro); // Cor aproximada do título
+    margin-top: 15px;
+  }
+
+  .itens-valores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px; // Espaço entre as colunas
+    row-gap: 60px; // Espaço entre as linhas
+    position: relative;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
+
+    .conector-valores {
+      position: absolute;
+      top: 22px; // Ajustado para ficar no meio exato do ícone (44px / 2)
+      left: 5%;
+      right: 5%;
+      height: 250px; // Ajuste conforme a altura do seu conteúdo
+      z-index: 0;
+      pointer-events: none;
+
+      .linha {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #00995D; // Linha um pouco mais grossa como na imagem
+        border-radius: 70px 20px 20px 20px; // Curvatura maior conforme a imagem
+        max-height: 196px;
+      }
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      z-index: 1;
+      margin-bottom: -40px;
+      position: relative;
+      width: 100%; // Ocupa a coluna do grid
+
+      .icon-svg {
+        background: #fff; // Fundo branco para "cortar" a linha
+        padding: 0 15px; // Padding lateral para afastar a linha do ícone
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px; // Altura fixa para alinhar com a linha
+      }
+
+      p {
+        text-align: center;
+        max-width: 240px; // Limita a largura do texto para não espalhar muito
+      }
+    }
+  }
+}
+
+  .unimed-solucoes {
+    margin-bottom: 46px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 622px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
