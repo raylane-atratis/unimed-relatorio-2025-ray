@@ -852,12 +852,16 @@ html {
   margin-left: 25px !important;
 }
 
-.nossas-pessoas-bloco {
+.retangulo-verde {
   max-width: 460px;
   min-height: 294px;
   width: 100%;
   border-radius: 20px 70px 20px 20px;
   background: var(--verde-escuro, #004d40);
+
+  @media (max-width: 992px) {
+   margin-bottom: 40px;
+  }
 }
 
 .stats-section {
@@ -1060,17 +1064,228 @@ html {
   }
 }
 
-  .unimed-solucoes {
-    margin-bottom: 46px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.unimed-solucoes {
+  margin-bottom: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    img {
+  img {
+    width: 100%;
+    max-width: 622px;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.sec-texto-ans {
+  margin-bottom: 30px;
+
+  .container-qualidade {
+    max-width: 1011px;
+    margin-left: 33px;
+
+    @media (max-width: 992px) {
+      margin: 0 auto;
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
       width: 100%;
-      max-width: 622px;
-      height: auto;
-      object-fit: cover;
+      padding-right: calc(var(--bs-gutter-x)*.5);
+      padding-left: calc(var(--bs-gutter-x)*.5);
     }
   }
 
+  .fundo-qualidade {
+    background-image: url(../../build/imgs/ans/page-1/qualidade.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: end;
+    padding: 48px 33px;
+    margin-bottom: 60px;
+
+    .conteudo-qualidade {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border: 1px solid var(--verde-claro);
+      border-radius: 0 70px 0 70px;
+      padding: 38px 24px 38px 63px;
+      max-width: 728px;
+
+      .titulo {
+        font-size: 60px;
+        font-weight: 400;
+        color: var(--branco);
+        text-transform: uppercase;
+      }
+
+      .descricao {
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--branco);
+        margin-bottom: 15px;
+        max-width: 650px;
+        line-height: 1.8;
+      }
+    }
+
+    @media (max-width: 992px) {
+      justify-content: center;
+      padding: 20px;
+      border-radius: 20px;
+      min-height: auto;
+
+
+      .conteudo-qualidade {
+        padding: 30px 20px;
+        border-radius: 0 40px 0 40px;
+        max-width: 100%;
+      }
+
+      .conteudo-qualidade .titulo {
+        font-size: 42px !important;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .item-ans {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sec-ans-solucoes {
+  padding: 15px 0 90px;
+  
+  h4 {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--verde-escuro);
+    margin-top: 17px;
+    font-size: 40px;
+    
+    @media screen and (max-width: 992px) {
+      font-size: 32px;
+    }
+  }
+  
+  .itens-valores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 70px;
+    position: relative;
+    padding: 0 66px;
+    
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr); // 2 colunas
+      gap: 40px 20px; // gap vertical e horizontal
+      padding: 0 20px; // Reduz o padding lateral
+      justify-items: center; // Centraliza os itens no grid
+    }
+    
+    @media screen and (max-width: 360px) {
+      grid-template-columns: 1fr; // 1 coluna em telas muito pequenas
+    }
+    
+    .conector-valores {
+      position: absolute;
+      top: 29px;
+      left: 0;
+      right: calc(2% + 38px);
+      height: 128px;
+      z-index: 0;
+      pointer-events: none;
+      
+      @media screen and (max-width: 992px) {
+        display: none; // Esconde a linha em mobile
+      }
+      
+      .linha {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #00995D;
+        border-radius: 20px 70px 20px 20px;
+        max-height: 196px;
+      }
+    }
+    
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      z-index: 1;
+      position: relative;
+      width: 100%;
+      
+      @media screen and (max-width: 992px) {
+        align-items: center; // Centraliza o conteúdo do item
+        text-align: center;
+      }
+      
+      .icon-svg {
+        background: #fff;
+        position: relative;
+        z-index: 2;
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 44px;
+        width: fit-content;
+        padding: 0 15px;
+        
+        @media screen and (max-width: 992px) {
+          justify-content: center;
+          padding: 0;
+        }
+      }
+      
+      .conteudo {
+        padding: 0 15px;
+        
+        @media screen and (max-width: 992px) {
+          padding: 0;
+        }
+      }
+      
+      h4 {
+        margin-top: 17px;
+        margin-bottom: 5px;
+        
+        @media screen and (max-width: 992px) {
+          text-align: center;
+        }
+      }
+      
+      p {
+        text-align: left;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0;
+        
+        @media screen and (max-width: 992px) {
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.sec-texto-inovacao-infraestrutura {
+    margin-bottom: 30px;
+}
