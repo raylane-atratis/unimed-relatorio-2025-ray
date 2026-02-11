@@ -1289,3 +1289,90 @@ html {
 .sec-texto-inovacao-infraestrutura {
     margin-bottom: 30px;
 }
+
+.sec-texto-esg {
+    margin-bottom: 40px;
+
+    h4 {
+      margin-bottom: 6px;
+    }
+}
+
+.sec-texto-premiacoes {
+  #premiacoes-space-left {
+    padding-left: 60px;
+
+    @media (max-width: 992px) {
+      padding: 0;
+    }
+  }
+
+  #premiacoes-space-right {
+    padding-right: 60px;
+
+    @media (max-width: 992px) {
+      padding: 0;
+    }
+  }
+
+  .item-premiacao {
+    h4 {
+      margin-bottom: 17px;
+    }
+    p {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.sec-texto-balanco-social {
+  .btn-balanco {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    svg {
+      margin-left: 15px;
+    }
+  }
+}
+
+.sec-texto-indicadores-economicos {
+  margin-bottom: 40px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+  h4 {
+    margin-bottom: 5px;
+  }
+
+  .texto-gestao-financeira {
+    text-align: center;
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    p {
+      margin-bottom: 100px;
+    }
+    h3 {
+      margin-bottom: 100px;
+    }
+  }
+
+  .btn-indicadores {
+    margin-top: 20px;
+    svg {
+      margin-left: 15px;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
