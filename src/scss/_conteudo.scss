@@ -1946,6 +1946,19 @@ footer {
   }
 }
 
+.no-space-list {
+  ul {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  h5 {
+    margin-bottom: 0;
+  }
+  p {
+    margin-bottom: 12px;
+  }
+}
+
 .nossos-numeros-nossas-pessoas-second {
   align-items: flex-start;
 
