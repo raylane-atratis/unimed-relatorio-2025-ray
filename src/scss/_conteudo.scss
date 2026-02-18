@@ -695,6 +695,384 @@ html {
   }
 }
 
+.sec-texto-nossas-pessoas-2 {
+  margin-bottom: 50px;
+}
+
+/* Nossas Pessoas */
+
+.container-ancora {
+  background: var(--verde-escuro);
+  border-radius: 30px;
+  padding: 0px 75px;
+
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+  }
+
+  a {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--branco);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+
+    span {
+      display: block;
+      padding: 8px 0;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 0%;
+      height: 7px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background: var(--verde-claro);
+      z-index: 99;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &.active {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 7px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: var(--verde-claro);
+        z-index: 99;
+      }
+    }
+
+    &:hover {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 7px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: var(--verde-claro);
+        z-index: 99;
+      }
+    }
+  }
+}
+
+.numero-ano {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: var(--verde-escuro);
+  margin-bottom: 40px;
+  margin-top: 17px;
+  display: block;
+}
+
+.banner-imagem-full {
+  width: 100%;
+  margin-bottom: 50px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.nossos-numeros-nossas-pessoas {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 46px;
+  width: fit-content;
+  flex-wrap: wrap;
+
+  border: 1px solid var(--verde);
+  border-radius: 20px;
+  border-top-right-radius: 70px;
+
+  padding: 0 45px 20px 21px;
+
+  .item-numero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 195px;
+
+    margin-top: -30px;
+
+    .icon-svg {
+      background: var(--branco);
+
+      padding: 10px;
+    }
+
+    .numero {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 40px;
+      letter-spacing: 0%;
+      color: var(--verde-escuro);
+    }
+
+    .texto {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 18px;
+      line-height: 20.5px;
+      letter-spacing: 0%;
+      color: var(--verde-escuro);
+    }
+  }
+}
+
+.nossos-colaboradores-numeros {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 45px;
+  width: fit-content;
+  flex-wrap: wrap;
+
+  border: 1px solid var(--verde);
+  border-radius: 20px;
+  border-top-right-radius: 70px;
+
+  padding: 0 45px 20px 38px;
+  height: 139px;
+  width: 100%;
+  position: relative;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 30px;
+  }
+
+  .item-numeros {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 100px;
+
+    margin-top: -30px;
+
+    .icon-svg {
+      background: var(--branco);
+      padding: 5px 10px;
+      position: absolute;
+      top: -23px;
+
+      strong {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--verde);
+        white-space: nowrap;
+      }
+    }
+
+    .numero {
+      font-weight: 700;
+      font-size: 40px;
+      letter-spacing: 0%;
+      color: var(--verde-escuro);
+
+      span {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 13px;
+        letter-spacing: 0%;
+      }
+    }
+
+    .texto {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20.5px;
+      letter-spacing: 0%;
+      color: var(--verde-escuro);
+    }
+
+    &:not(:has(.icon-svg)) {
+      margin-top: 0;
+      align-self: flex-end;
+    }
+  }
+
+  .list-numeros {
+    margin-top: -10px;
+    margin-bottom: 0;
+
+    p {
+      font-size: 15px;
+      line-height: 24px;
+      color: var(--verde-escuro);
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.numeros-novas-contratacoes {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 30px;
+  width: fit-content;
+  flex-wrap: wrap;
+
+  border: 1px solid var(--verde);
+  border-radius: 20px;
+  border-top-right-radius: 70px;
+
+  padding: 0 45px 20px 38px;
+  height: 139px;
+  width: 100%;
+  position: relative;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 30px;
+  }
+
+  .item-numero-contraracoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 100px;
+
+    margin-top: -30px;
+
+    .icon-svg {
+      background: var(--branco);
+      padding: 5px 10px 5px 0;
+      position: absolute;
+      top: -23px;
+
+      strong {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--verde);
+        white-space: nowrap;
+      }
+    }
+
+    .numero {
+      font-weight: 700;
+      font-size: 40px;
+      letter-spacing: 0%;
+      color: var(--verde-escuro);
+
+      span {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 13px;
+        letter-spacing: 0%;
+      }
+    }
+
+    .texto {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20.5px;
+      letter-spacing: 0%;
+      color: var(--verde-escuro);
+      max-width: 199px;
+    }
+
+    &:not(:has(.icon-svg)) {
+      margin-top: 0;
+      align-self: flex-end;
+    }
+  }
+}
+
+.titulo-novas-contratacoes {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0%;
+  color: var(--verde);
+
+  display: block;
+  margin-bottom: 40px;
+}
+
+.item-numeros-saude-seguranca {
+  border: 1px solid var(--verde);
+  border-radius: 20px;
+  border-top-right-radius: 70px;
+
+  padding: 0 45px 20px 38px;
+  width: 100%;
+  position: relative;
+
+  .top-header {
+    background: var(--bege);
+    padding: 5px 10px 5px 5px;
+    margin-top: -35px;
+    width: fit-content;
+
+    strong {
+      font-weight: 700;
+      font-size: 40px;
+      color: var(--verde);
+      white-space: nowrap;
+    }
+  }
+
+  .bottom-header {
+    .list-numeros {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 30px;
+      width: fit-content;
+      flex-wrap: wrap;
+
+      .numero {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        max-width: 199px;
+
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: 0%;
+        color: var(--verde-escuro);
+
+        span.numero-label {
+          font-weight: 400;
+          font-size: 15px;
+          letter-spacing: 0%;
+        }
+      }
+    }
+  }
+}
+
+/* fim nossas pessoas david
+ */
 .nossas-pessoas-2 {
   padding-bottom: 40px;
 
@@ -860,7 +1238,7 @@ html {
   background: var(--verde-escuro, #004d40);
 
   @media (max-width: 992px) {
-   margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1169,7 +1547,7 @@ html {
 
 .sec-ans-solucoes {
   padding: 15px 0 90px;
-  
+
   h4 {
     text-align: left;
     text-transform: uppercase;
@@ -1177,30 +1555,30 @@ html {
     color: var(--verde-escuro);
     margin-top: 17px;
     font-size: 40px;
-    
+
     @media screen and (max-width: 992px) {
       font-size: 32px;
     }
   }
-  
+
   .itens-valores {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 70px;
     position: relative;
     padding: 0 66px;
-    
+
     @media screen and (max-width: 992px) {
       grid-template-columns: repeat(2, 1fr); // 2 colunas
       gap: 40px 20px; // gap vertical e horizontal
       padding: 0 20px; // Reduz o padding lateral
       justify-items: center; // Centraliza os itens no grid
     }
-    
+
     @media screen and (max-width: 360px) {
       grid-template-columns: 1fr; // 1 coluna em telas muito pequenas
     }
-    
+
     .conector-valores {
       position: absolute;
       top: 29px;
@@ -1209,11 +1587,11 @@ html {
       height: 128px;
       z-index: 0;
       pointer-events: none;
-      
+
       @media screen and (max-width: 992px) {
         display: none; // Esconde a linha em mobile
       }
-      
+
       .linha {
         display: block;
         width: 100%;
@@ -1223,7 +1601,7 @@ html {
         max-height: 196px;
       }
     }
-    
+
     .item {
       display: flex;
       flex-direction: column;
@@ -1231,12 +1609,12 @@ html {
       z-index: 1;
       position: relative;
       width: 100%;
-      
+
       @media screen and (max-width: 992px) {
         align-items: center; // Centraliza o conteúdo do item
         text-align: center;
       }
-      
+
       .icon-svg {
         background: #fff;
         position: relative;
@@ -1247,36 +1625,36 @@ html {
         height: 44px;
         width: fit-content;
         padding: 0 15px;
-        
+
         @media screen and (max-width: 992px) {
           justify-content: center;
           padding: 0;
         }
       }
-      
+
       .conteudo {
         padding: 0 15px;
-        
+
         @media screen and (max-width: 992px) {
           padding: 0;
         }
       }
-      
+
       h4 {
         margin-top: 17px;
         margin-bottom: 5px;
-        
+
         @media screen and (max-width: 992px) {
           text-align: center;
         }
       }
-      
+
       p {
         text-align: left;
         font-weight: bold;
         font-size: 18px;
         margin: 0;
-        
+
         @media screen and (max-width: 992px) {
           text-align: center;
           font-size: 16px;
@@ -1287,15 +1665,19 @@ html {
 }
 
 .sec-texto-inovacao-infraestrutura {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.sect-texto-inovacao-infraestrutura {
+  margin-bottom: 30px;
 }
 
 .sec-texto-esg {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 
-    h4 {
-      margin-bottom: 6px;
-    }
+  h4 {
+    margin-bottom: 6px;
+  }
 }
 
 .sec-texto-premiacoes {
@@ -1319,6 +1701,7 @@ html {
     h4 {
       margin-bottom: 17px;
     }
+
     p {
       margin-bottom: 40px;
     }
@@ -1331,6 +1714,7 @@ html {
       color: inherit;
       text-decoration: none;
     }
+
     svg {
       margin-left: 15px;
     }
@@ -1343,23 +1727,27 @@ html {
   h2 {
     margin-bottom: 10px;
   }
+
   h4 {
     margin-bottom: 5px;
   }
 
   .texto-gestao-financeira {
     text-align: center;
+
     a {
       color: inherit;
       text-decoration: none;
 
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
+
     p {
       margin-bottom: 100px;
     }
+
     h3 {
       margin-bottom: 100px;
     }
@@ -1367,12 +1755,212 @@ html {
 
   .btn-indicadores {
     margin-top: 20px;
+
     svg {
       margin-left: 15px;
     }
+
     a {
       color: inherit;
       text-decoration: none;
+    }
+  }
+}
+
+/* footer */
+footer {
+  background: var(--verde-escuro);
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .container {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .backToTop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+
+      background-color: var(--laranja);
+      min-width: 31px;
+      height: 31px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.aspaTopo {
+  img {
+    position: absolute;
+    top: -55px;
+    right: 10px;
+    width: 150px;
+  }
+}
+
+/* dropdown */
+.dropdown {
+  position: relative;
+  margin-bottom: 20px;
+
+  .dropdownBtn {
+    color: var(--verde);
+    font-weight: 700;
+    font-size: 17px;
+    background-color: var(--bege);
+    border-radius: 20px;
+    padding: 18px 29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      transform: rotate(0deg);
+      transition: all 0.3s ease-in-out;
+      scale: 0.8;
+    }
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .result {
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &.active {
+    .dropdownBtn {
+      border-radius: 20px 20px 0px 0px;
+
+      img {
+        transform: rotate(180deg);
+      }
+    }
+
+    .result {
+      visibility: visible;
+      opacity: 1;
+      max-height: unset;
+
+      &.max400 {
+        max-height: 400px;
+      }
+
+      &.max600 {
+        max-height: 600px;
+      }
+
+      &.max800 {
+        max-height: 800px;
+      }
+
+      &.max1000 {
+        max-height: 1000px;
+      }
+
+      &.max2000 {
+        max-height: 2000px;
+      }
+    }
+  }
+
+  .result {
+    z-index: 2;
+    background-color: var(--bege);
+    left: 0;
+    opacity: 0;
+    top: 0;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    // position: absolute;
+    max-height: 0px;
+    width: 100%;
+    left: 0;
+
+    p {
+      color: var(--verde);
+    }
+
+    .linha {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 20px;
+
+      p {
+        color: var(--verde);
+      }
+    }
+
+    table {
+      margin: 0 30px;
+
+      th,
+      td {
+        color: var(--verde);
+        text-align: center;
+        padding: 14px 0;
+        width: 1%;
+
+        &:not(:last-child) {
+          border-right: 1px solid rgba(255, 255, 255, 0.5);
+        }
+      }
+
+      th {
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      }
+
+      p {
+        color: var(--verde);
+      }
+
+      td div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: start;
+        margin-left: 20px;
+      }
+    }
+
+    .border-line-bottom {
+      border-bottom: 1px solid var(--verde);
+    }
+  }
+}
+
+.nossos-numeros-nossas-pessoas-second {
+  align-items: flex-start;
+
+  .item-numero-second {
+    margin-top: -40px !important;
+    max-width: 165px !important;
+    min-width: 165px !important;
+    align-items: center !important;
+
+    .icon-svg {
+      padding: 0 10px;
+    }
+
+    p {
+      text-align: center !important;
     }
   }
 }
